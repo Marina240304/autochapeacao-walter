@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  background: #0b0b0f;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #222;
+}
+
+.header span {
+  color: red;
+}
+
+/* BANNER */
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-text h2 {
+  font-size: 32px;
+}
+
+.banner-text p {
+  color: #ccc;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* BOTÕES */
+.btn {
+  background: red;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.insta {
+  background: #e1306c;
+}
+
+/* SERVIÇOS */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 40px;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1f;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* GALERIA */
+.gallery {
+  padding: 40px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CONTATO */
+.contact {
+  text-align: center;
+  padding: 40px;
+}
+
+.contact p {
+  margin: 15px 0;
+  color: #aaa;
+}
+
+.contact a {
+  color: white;
+}
+
+/* MAPA */
+.map {
+  padding: 40px;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #222;
+  color: #777;
+}
+
+/* BOTÃO FLUTUANTE */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 0 5px red);
+}
+.form {
+  max-width: 400px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form textarea {
+  min-height: 100px;
+}
+.orcamento-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0b0b0f, #111);
+}
+
+.orcamento-box {
+  background: #1a1a1f;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.orcamento-box h1 {
+  margin-bottom: 10px;
+}
+
+.orcamento-box p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.orcamento-box input,
+.orcamento-box select,
+.orcamento-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.orcamento-box textarea {
+  min-height: 100px;
+}
+
+.orcamento-box button {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.orcamento-box button:hover {
+  background: #cc0000;
+  transform: scale(1.03);
+}
+.orcamento-box h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+.orcamento-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.orcamento-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.orcamento-box {
+  position: relative;
+  z-index: 1;
+  background: #1a1a1f;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.orcamento-box h1 {
+  color: white;
+}
+
+.orcamento-box input,
+.orcamento-box select,
+.orcamento-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.orcamento-box button {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
